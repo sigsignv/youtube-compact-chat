@@ -1,4 +1,13 @@
-import { defineConfig } from 'wxt';
+import { defineConfig } from "wxt";
 
-// See https://wxt.dev/api/config.html
-export default defineConfig({});
+export default defineConfig({
+  hooks: {
+    "build:manifestGenerated": (_, manifest) => {
+      manifest.content_scripts ??= [];
+      manifest.content_scripts.push({
+        css: ["content-scripts/content.css"],
+        matches: ["https://www.youtube.com/*"],
+      });
+    },
+  },
+});
