@@ -1,30 +1,14 @@
 @charset "UTF-8";
 
-ytd-watch-flexy {
+ytd-watch-flexy:not([watch-while-panels-active]) {
   --ylcaa-required-min-height: 360px;
 
   --ylcaa-masthead-offset: calc(
     var(--ytd-watch-flexy-masthead-height) +
     var(--ytd-margin-6x)
   );
-}
 
-/* Side-by-side chat layout */
-ytd-watch-flexy:not([watch-while-panels-active]):not([theater]) {
-  #secondary {
-    #chat.ytd-watch-flexy:not([collapsed]) {
-      --ylcaa-default-min-height: 596px;
-
-      min-height: clamp(
-        var(--ylcaa-required-min-height),
-        calc(100vh - var(--ylcaa-masthead-offset)),
-        var(--ylcaa-default-min-height)
-      );
-    }
-  }
-}
-
-ytd-watch-flexy:not([watch-while-panels-active]) {
+  /* Stacked chat layout */
   #below {
     #chat.ytd-watch-flexy:not([collapsed]) {
       min-height: var(--ylcaa-required-min-height);
@@ -35,12 +19,31 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
         var(--ytd-watch-flexy-height-ratio)
       );
 
-      height: calc(
-        100vh -
-        var(--ylcaa-masthead-offset) -
-        var(--ylcaa-video-player-height) -
-        var(--ytd-margin-6x)
+      height: clamp(
+        var(--ylcaa-required-min-height),
+        calc(
+          100vh -
+          var(--ylcaa-masthead-offset) -
+          var(--ylcaa-video-player-height) -
+          var(--ytd-margin-6x)
+        ),
+        var(--ytd-watch-flexy-chat-max-height)
       );
+    }
+  }
+
+  /* Side-by-side chat layout */
+  &:not([theater]) {
+    #secondary {
+      #chat.ytd-watch-flexy:not([collapsed]) {
+        --ylcaa-default-min-height: 596px;
+
+        min-height: clamp(
+          var(--ylcaa-required-min-height),
+          calc(100vh - var(--ylcaa-masthead-offset)),
+          var(--ylcaa-default-min-height)
+        );
+      }
     }
   }
 }
