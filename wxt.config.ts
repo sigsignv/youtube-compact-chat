@@ -10,6 +10,7 @@ export default defineConfig({
       manifest.content_scripts.push({
         css: ["content-scripts/content.css"],
         matches: ["https://www.youtube.com/*"],
+        all_frames: false,
       });
     },
   },
