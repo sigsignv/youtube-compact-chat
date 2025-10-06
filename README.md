@@ -1,6 +1,13 @@
-# YouTube Live Chat auto adjust
+# YouTube CompactChat
 
-A browser extension that Shrinks YouTube Live Chat height for better window fit.
+A browser extension that automatically compacts YouTube Live Chat height.
+
+## Build
+
+```sh
+$ npm install
+$ npm run zip
+```
 
 ## Author
 
