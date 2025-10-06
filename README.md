@@ -2,6 +2,13 @@
 
 A browser extension that automatically compacts YouTube Live Chat height.
 
+## Build
+
+```sh
+$ npm install
+$ npm run zip
+```
+
 ## Author
 
 - Sigsign <<sig@signote.cc>>
