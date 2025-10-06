@@ -1,6 +1,6 @@
 {
-  "name": "youtube-live-chat-auto-adjust",
-  "description": "Shrinks YouTube Live Chat height for better window fit.",
+  "name": "youtube-compact-chat",
+  "description": "Automatically compacts YouTube Live Chat height.",
   "private": true,
   "version": "0.1.1",
   "type": "module",
