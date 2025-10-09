@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 ytd-watch-flexy:not([watch-while-panels-active]) {
-  --ylcaa-required-min-height: 360px;
+  --ycc-required-min-height: 360px;
 
-  --ylcaa-masthead-offset: calc(
+  --ycc-masthead-offset: calc(
     var(--ytd-watch-flexy-masthead-height) +
     var(--ytd-margin-6x)
   );
@@ -11,9 +11,9 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
   /* Stacked chat layout */
   #below {
     #chat.ytd-watch-flexy:not([collapsed]) {
-      min-height: var(--ylcaa-required-min-height);
+      min-height: var(--ycc-required-min-height);
 
-      --ylcaa-video-player-height: calc(
+      --ycc-video-player-height: calc(
         (100vw - var(--ytd-watch-flexy-scrollbar-width)) /
         var(--ytd-watch-flexy-width-ratio) *
         var(--ytd-watch-flexy-height-ratio)
@@ -22,8 +22,8 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
       height: min(
         calc(
           100vh -
-          var(--ylcaa-masthead-offset) -
-          var(--ylcaa-video-player-height) -
+          var(--ycc-masthead-offset) -
+          var(--ycc-video-player-height) -
           var(--ytd-margin-4x)
         ),
         var(--ytd-watch-flexy-chat-max-height)
@@ -35,12 +35,12 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
   &:not([theater]) {
     #secondary {
       #chat.ytd-watch-flexy:not([collapsed]) {
-        --ylcaa-default-min-height: 596px;
+        --ycc-default-min-height: 596px;
 
         min-height: clamp(
-          var(--ylcaa-required-min-height),
-          calc(100vh - var(--ylcaa-masthead-offset)),
-          var(--ylcaa-default-min-height)
+          var(--ycc-required-min-height),
+          calc(100vh - var(--ycc-masthead-offset)),
+          var(--ycc-default-min-height)
         );
       }
     }
