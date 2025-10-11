@@ -10,53 +10,62 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <g
-     id="layer1">
-    <rect
-       style="fill:#ff0033;fill-opacity:1;stroke:#ff0033;stroke-width:24;stroke-opacity:1"
-       id="rect1"
-       width="488"
-       height="488"
-       x="12"
-       y="12"
-       ry="0" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:48;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       id="rect2"
-       width="488"
-       height="488"
-       x="-48"
-       y="-48"
-       ry="48" />
+     id="circle">
+    <circle
+       style="fill:#ff0033;stroke:#ff0033;stroke-width:48;stroke-opacity:0"
+       id="outer"
+       cx="256"
+       cy="256"
+       r="232" />
+    <circle
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:128;stroke-opacity:0"
+       id="inner"
+       cx="256"
+       cy="256"
+       r="192" />
   </g>
   <g
-     id="layer2">
-    <circle
-       style="fill:#c6c6c6;fill-opacity:1;fill-rule:evenodd;stroke:#c6c6c6;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       id="path20"
-       cx="320"
-       cy="320"
-       r="96" />
-    <g
-       id="g1"
-       transform="matrix(2.9923623,0,0,3.0001894,-809.464,-880.0696)">
-      <ellipse
-         style="fill:#c6c6c6;fill-opacity:1;fill-rule:evenodd;stroke:#c6c6c6;stroke-width:4.00497;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-         id="ellipse1"
-         cx="298.08167"
-         cy="399.99802"
-         rx="30.079191"
-         ry="29.995493" />
-      <rect
-         style="fill:#c6c6c6;fill-opacity:1;fill-rule:evenodd;stroke:#c6c6c6;stroke-width:3.9738;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-         id="rect3"
-         width="52.427341"
-         height="60.02216"
-         x="248.01237"
-         y="369.98688" />
-    </g>
-    <path
-       style="fill:#b9b9b9;fill-opacity:1;fill-rule:evenodd;stroke:#b9b9b9;stroke-width:8.00277;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       d="M -67.998615,164.00139 H 459.99584"
-       id="path1" />
+     id="g1"
+     transform="translate(0.50042845,-16.013704)">
+    <rect
+       style="fill:#ff0033;fill-rule:evenodd;stroke:#ff0033;stroke-width:16;stroke-opacity:1"
+       id="rect1-1"
+       width="128"
+       height="24"
+       x="224"
+       y="-32"
+       transform="rotate(45)"
+       ry="14" />
+    <rect
+       style="fill:#ff0033;stroke:#ff0033;stroke-width:16;stroke-opacity:1"
+       id="rect2-1"
+       width="128"
+       height="24"
+       x="-136"
+       y="-352"
+       transform="rotate(135)"
+       ry="14" />
+  </g>
+  <g
+     id="g2"
+     transform="rotate(180,254.78595,262.88015)">
+    <rect
+       style="fill:#ff0033;fill-rule:evenodd;stroke:#ff0033;stroke-width:16;stroke-opacity:1"
+       id="rect1-2"
+       width="128"
+       height="24"
+       x="224"
+       y="-32"
+       transform="rotate(45)"
+       ry="14" />
+    <rect
+       style="fill:#ff0033;stroke:#ff0033;stroke-width:16;stroke-opacity:1"
+       id="rect2-2"
+       width="128"
+       height="24"
+       x="-136"
+       y="-352"
+       transform="rotate(135)"
+       ry="14" />
   </g>
 </svg>
