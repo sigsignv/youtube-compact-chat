@@ -11,8 +11,6 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
   /* Stacked chat layout */
   #below {
     #chat.ytd-watch-flexy:not([collapsed]) {
-      min-height: var(--ycc-required-min-height);
-
       --ycc-video-player-height: calc(
         (100vw - var(--ytd-watch-flexy-scrollbar-width)) /
         var(--ytd-watch-flexy-width-ratio) *
@@ -28,6 +26,7 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
         ),
         var(--ytd-watch-flexy-chat-max-height)
       );
+      min-height: var(--ycc-required-min-height);
     }
   }
 
