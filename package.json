@@ -15,7 +15,7 @@
     "postinstall": "wxt prepare"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.1",
+    "@biomejs/biome": "2.4.13",
     "@wxt-dev/auto-icons": "^1.1.0",
     "typescript": "^5.9.3",
     "wxt": "^0.20.11"
