@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.13",
-    "@wxt-dev/auto-icons": "^1.1.0",
+    "@wxt-dev/auto-icons": "^1.1.1",
     "typescript": "^6.0.3",
     "wxt": "^0.20.11"
   }
