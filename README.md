@@ -2,11 +2,26 @@
 
 A browser extension that automatically compacts YouTube Live Chat height.
 
-## Build
+## Development
+
+### Setup
 
 ```sh
-$ npm install
-$ npm run zip
+$ pnpm install
+```
+
+### Build
+
+For Chrome:
+
+```sh
+$ pnpm run zip
+```
+
+For Firefox:
+
+```sh
+$ pnpm run zip:firefox
 ```
 
 ## Author
