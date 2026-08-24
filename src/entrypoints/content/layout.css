@@ -27,6 +27,10 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
         var(--ytd-watch-flexy-chat-max-height)
       );
       min-height: var(--ycc-required-min-height);
+
+      &[style*="--ycc-user-height:"] {
+        height: var(--ycc-user-height);
+      }
     }
   }
 
@@ -41,6 +45,10 @@ ytd-watch-flexy:not([watch-while-panels-active]) {
           calc(100vh - var(--ycc-masthead-offset)),
           var(--ycc-default-min-height)
         );
+
+        &[style*="--ycc-user-height:"] {
+          height: var(--ycc-user-height);
+        }
       }
     }
   }

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Hide the handle outside supported chat layouts. */
+.ycc-resize-handle {
+  display: none;
+}
+
+ytd-watch-flexy:not([theater]) ytd-live-chat-frame:not([collapsed]) {
+  position: relative;
+
+  .ycc-resize-handle {
+    position: absolute;
+    inset-block-end: -5px;
+    inset-inline: 0;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    height: 10px;
+    touch-action: none;
+    cursor: ns-resize;
+
+    &::after {
+      width: 40px;
+      height: 2px;
+      content: "";
+    }
+
+    &:hover::after {
+      background: var(--yt-sys-color-baseline--call-to-action, #065fd4);
+    }
+  }
+}
